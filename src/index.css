@@ -1,0 +1,132 @@
+@font-face {
+  font-family: "font1";
+  src: url(../src/assets/fonts/Dongle-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  font-family: "font1", Verdana, Geneva, Tahoma, sans-serif;
+  background: rgb(22, 22, 22);
+  color: rgb(231, 26, 26);
+  font-size: 1.5rem;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 190px;
+  max-width: 1470px;
+  min-width: 350px;
+  position: relative;
+}
+
+.header-container ::after {
+  content: "";
+  position: absolute;
+  background: rgba(122, 118, 118, 0.062);
+  width: 900px;
+  height: 800px;
+  left: -340px;
+  top: -590px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.ul-container {
+  display: flex;
+
+  gap: 30px;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 10px;
+  z-index: 5;
+  cursor: pointer;
+  font-weight: 800;
+  text-shadow: 3px 2px rgba(255, 0, 0, 0.726) 13px;
+  transform: 0.4s ease;
+}
+.nav-link {
+  text-decoration: none;
+
+  color: rgb(231, 26, 26);
+}
+
+.ul-container {
+  transition: 0.3s ease;
+}
+
+.ul-container :hover {
+  border-bottom: 1px solid white;
+}
+.titre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+h1 {
+  text-shadow: 3px 2px 13px rgba(255, 0, 0, 0.726);
+  text-align: center;
+}
+
+@media (max-width: 650px) {
+  .header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header-container ::after {
+    content: "";
+    position: absolute;
+    background: rgba(122, 118, 118, 0.062);
+    width: 900px;
+    height: 400px;
+    left: -200px;
+    top: -260px;
+
+    border-radius: 50%;
+    z-index: -1;
+  }
+  .ul-container {
+    font-size: 1.2rem;
+  }
+  .titre {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 660px) and (max-width: 850px) {
+  body {
+    width: 700px;
+  }
+  .header-container ::after {
+    content: "";
+    position: absolute;
+    background: rgba(122, 118, 118, 0.062);
+    width: 500px;
+    height: 400px;
+    left: -200px;
+    top: -260px;
+
+    border-radius: 50%;
+    z-index: -1;
+  }
+}
+
+#like {
+  text-align: center;
+  font-size: 2rem;
+}

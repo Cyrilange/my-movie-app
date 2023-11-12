@@ -1,0 +1,91 @@
+.card {
+  margin-top: 100px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 2;
+  background: rgba(122, 118, 118, 0.192);
+  border-radius: 20px;
+}
+
+img {
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 10px;
+  box-shadow: 2px 1px 10px red;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-top: 15px;
+}
+.inside {
+  padding: 10px;
+  width: 300px;
+  height: 600px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#star {
+  font-size: 0.9rem;
+}
+h4 {
+  margin-top: 25px;
+}
+
+#genre {
+  padding: 2px;
+  background: rgb(231, 26, 26);
+  text-align: center;
+  border-radius: 5px;
+  color: gold;
+}
+
+.btn-like {
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 50%;
+  background: rgb(231, 26, 26);
+  text-align: center;
+
+  color: gold;
+}
+
+p {
+  font-size: 1.2rem;
+  overflow-y: scroll;
+}
+
+.btn-like {
+  cursor: pointer;
+}
+
+@media (min-width: 260px) and (max-width: 650px) {
+  .inside {
+    width: 140px;
+    height: 600px;
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+
+  p {
+    opacity: 0;
+  }
+  h3 {
+    opacity: 0;
+  }
+}
